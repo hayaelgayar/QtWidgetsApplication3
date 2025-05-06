@@ -19,15 +19,15 @@ private slots:
     void on_personal_details_clicked();
     void on_rides_clicked();
     void on_sub_settings_clicked();
-    void on_logout_clicked();
-    void on_pushButton_12_clicked();
+   /* void on_logout_clicked();
+    void on_pushButton_12_clicked();*/
     void on_pushButton_6_clicked();
     void on_pushButton_7_clicked();
     void on_pushButton_8_clicked();
     void on_pushButton_9_clicked();
     void on_pushButton_10_clicked();
-    void on_pushButton_13_clicked();
-    void on_pushButton_sign_clicked();
+   /* void on_pushButton_13_clicked();
+    void on_pushButton_sign_clicked();*/
     void on_back1_clicked();
     void on_back2_clicked();
     void on_back3_clicked();

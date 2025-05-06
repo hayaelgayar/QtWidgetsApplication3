@@ -17,7 +17,7 @@ QtWidgetsApplication3::QtWidgetsApplication3(QWidget* parent)
     , ui(new Ui::MainWindow)  // Correct link to the UI class generated from the .ui file
 {
     ui->setupUi(this);  // Set up the UI components
-    ui->stackedWidget->setCurrentWidget(ui->welcome1);
+    ui->stackedWidget->setCurrentWidget(ui->welcome2);
 }
 
 QtWidgetsApplication3::~QtWidgetsApplication3()
@@ -25,12 +25,12 @@ QtWidgetsApplication3::~QtWidgetsApplication3()
     delete ui;  // Clean up
 }
 
-void  QtWidgetsApplication3::on_pushButton_12_clicked() {
-    ui->stackedWidget->setCurrentWidget(ui->create_account);
-}
-void  QtWidgetsApplication3::on_pushButton_13_clicked() {
-    ui->stackedWidget->setCurrentWidget(ui->login);
-}
+//void  QtWidgetsApplication3::on_pushButton_12_clicked() {
+//    ui->stackedWidget->setCurrentWidget(ui->create_account);
+//}
+//void  QtWidgetsApplication3::on_pushButton_13_clicked() {
+//    ui->stackedWidget->setCurrentWidget(ui->login);
+//}
 
 void  QtWidgetsApplication3::on_personal_details_clicked() {
     ui->stackedWidget->setCurrentWidget(ui->current_data);
@@ -41,9 +41,9 @@ void  QtWidgetsApplication3::on_rides_clicked() {
 void  QtWidgetsApplication3::on_sub_settings_clicked() {
     ui->stackedWidget->setCurrentWidget(ui->manage_plan);
 }
-void  QtWidgetsApplication3::on_logout_clicked() {
-    ui->stackedWidget->setCurrentWidget(ui->welcome1);
-}
+//void  QtWidgetsApplication3::on_logout_clicked() {
+//    ui->stackedWidget->setCurrentWidget(ui->welcome1);
+//}
 void  QtWidgetsApplication3::on_pushButton_6_clicked() {
     ui->stackedWidget->setCurrentWidget(ui->new_rides);
 }
@@ -61,27 +61,27 @@ void  QtWidgetsApplication3::on_pushButton_10_clicked() {
 }
 
 
-void QtWidgetsApplication3::on_pushButton_23_clicked(){
-    QString username = ui->lineEdit_username->text().trimmed();
-    QString password = ui->lineEdit_password->text().trimmed();
-
-    if (username == "haya" && password == "haya") {
-        QMessageBox::information(this, "Login", "Username and Password is correct");
-        ui->stackedWidget->setCurrentWidget(ui->welcome2);
-
-    }
-    else {
-        QMessageBox::warning(this, "Login", "Username and Password is not correct");
-    }
-}
-void QtWidgetsApplication3::on_pushButton_sign_clicked(){
-    QString username = ui->lineEdit_username_2->text().trimmed();
-    QString password = ui->lineEdit_password_2->text().trimmed();
-    QString email = ui->lineEdit_email->text().trimmed();
-    QString balance = ui->lineEdit_balance->text().trimmed();
-    ui->stackedWidget->setCurrentWidget(ui->welcome2);
-
-}
+//void QtWidgetsApplication3::on_pushButton_23_clicked(){
+//    QString username = ui->lineEdit_username->text().trimmed();
+//    QString password = ui->lineEdit_password->text().trimmed();
+//
+//    if (username == "haya" && password == "haya") {
+//        QMessageBox::information(this, "Login", "Username and Password is correct");
+//        ui->stackedWidget->setCurrentWidget(ui->welcome2);
+//
+//    }
+//    else {
+//        QMessageBox::warning(this, "Login", "Username and Password is not correct");
+//    }
+//}
+////void QtWidgetsApplication3::on_pushButton_sign_clicked(){
+//    QString username = ui->lineEdit_username_2->text().trimmed();
+//    QString password = ui->lineEdit_password_2->text().trimmed();
+//    QString email = ui->lineEdit_email->text().trimmed();
+//    QString balance = ui->lineEdit_balance->text().trimmed();
+//    ui->stackedWidget->setCurrentWidget(ui->welcome2);
+//
+//}
 //void QtWidgetsApplication3::on_pushButton_sign_clicked() {
 //    QString username = ui->lineEdit_username_2->text().trimmed();
 //    QString password = ui->lineEdit_password_2->text().trimmed();

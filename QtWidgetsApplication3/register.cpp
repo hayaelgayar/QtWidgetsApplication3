@@ -4,6 +4,7 @@ Register::Register(QWidget* parent)
     , ui(new Ui::Register)
 {
     ui->setupUi(this);
+    ui->stackedWidget->setCurrentWidget(ui->welcome1_page);
 }
 
 Register::~Register()

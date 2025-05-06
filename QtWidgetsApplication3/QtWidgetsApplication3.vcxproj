@@ -92,8 +92,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="data.cpp" />
     <ClCompile Include="global.cpp" />
     <ClCompile Include="register.cpp" />
+    <ClCompile Include="structures.cpp" />
     <QtRcc Include="QtWidgetsApplication3.qrc" />
     <QtMoc Include="QtWidgetsApplication3.h" />
     <ClCompile Include="main.cpp" />
@@ -102,6 +104,7 @@
     <QtUic Include="register.ui" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="data.h" />
     <ClInclude Include="dependence.h" />
     <ClInclude Include="global.h" />
     <QtMoc Include="register.h" />
